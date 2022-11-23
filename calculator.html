@@ -1,0 +1,46 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Calculator/style.css">
+    <title>Document</title>
+</head>
+<body>
+  
+
+    <div class="input">
+        <input type="number" name="inp1" id="inp1">Enter 1st number</input>
+        <input type="number" name="inp2" id="inp2">Enter 2nd number</input>
+    </div>
+     <br>
+    <div class="container">
+        <div class="add">
+            <button onclick="add()">+</button>
+        </div>
+        <div class="sub">
+            <button onclick="sub()">-</button>
+        </div>
+        <div class="mul">
+            <button onclick="mul()">*</button>
+        </div>
+        <div class="divi">
+            <button onclick="divi()"> / </button>
+        </div>
+    </div>
+    <br>
+
+    <div class="res">
+        <input id="res" placeholder="result"/>
+    </div>
+<script>
+function add(){
+    var first= parseInt(document.getElementById("inp1").valueAsNumber);
+    var sec = parseInt(document.getElementById("inp2").valueAsNumber);
+    document.getElementById('res').value = first+sec;
+}
+</script>
+
+</body>
+</html>
