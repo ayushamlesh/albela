@@ -1,0 +1,165 @@
+<html lang="en">
+        
+        
+          
+<head>
+        
+        
+          
+    <meta charset="UTF-8">
+        
+        
+          
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        
+          
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+          
+    <title>Document</title>
+        
+        
+          
+</head>
+        
+        
+          
+<body>
+        
+        
+          
+   <!-- /* WRITE A PROGRAM TO CREATE A FUNCTION THAT
+        
+        
+          
+     CONTAINS USERNAME,PASSWORD,CONFIRM PASSWORD AND
+        
+        
+          
+     SUBMIT BUTTON. APPLY THE VALIDATIONS LIKE:
+        
+        
+          
+     1-PSWD AND CNF PSWD SHOULD BE SAME
+        
+        
+          
+     2-IF VALIDATON FAIL POPUP BOX WITH ERROR MESSAGE
+        
+        
+          
+     */ -->
+        
+        
+          
+<script>
+        
+        
+          
+   /* APPLY THE VALIDATIONS LIKE:
+        
+        
+          
+     1-PSWD AND CNF PSWD SHOULD BE SAME
+        
+        
+          
+     2-IF VALIDATON FAIL POPUP BOX WITH ERROR MESSAGE
+        
+        
+          
+     */
+        
+        
+          
+    function pswd_check(form)
+        
+        
+          
+    {
+        
+        
+          
+    let pswd=form.PSWD.value
+        
+        
+          
+    let cnf_pswd=form.CNF_PSWD.value
+        
+        
+          
+    if (pswd==cnf_pswd)
+        
+        
+          
+    {
+        
+        
+          
+        alert("successful")
+        
+        
+          
+    }
+        
+        
+          
+    else
+        
+        
+          
+    {
+        
+        
+          
+        alert("password not same")
+        
+        
+          
+    }
+        
+        
+          
+    }
+        
+        
+          
+</script>
+        
+        
+          
+<form onSubmit = "return pswd_check(this)">
+        
+        
+          
+    <p>USERNAME</p><input id=name type="text">
+        
+        
+          
+   <p>PASSWORD</p><input name=PSWD type="text">
+        
+        
+          
+   <P>CONFIRM PASSWORD</P><input name=CNF_PSWD type="text">
+        
+        
+          
+   <button type="button" value="submit">save</button>
+        
+        
+          
+   </form> 
+        
+        
+          
+</body>
+        
+        
+          
+</html>
+
+        
+        
+          
